@@ -103,7 +103,7 @@ Finally:
 
 .. code-block:: bash
 
-    $ python runserver.py
+    $ python src/runserver.py
      * Running on http://0.0.0.0:5000/
      * Restarting with reloader
 
@@ -112,7 +112,7 @@ Configuration
 =============
 
 Configuration (database url, email, proxy, user agent, etc.) is done via the
-file `conf/conf.cfg`.
+file `src/conf/conf.cfg`.
 Check this file before initializing the database (with `manager.py`).
 
 If you want to use JARR with Tor/Privoxy, you just have to set the value
@@ -129,4 +129,4 @@ your cron rules (*crontab -e*):
 
 .. code-block:: bash
 
-    */30 * * * * cd ~/.JARR/ ; python manager.py fetch_asyncio None None
+    */30 * * * * cd ~/.JARR/ ; python src/anager.py fetch_asyncio None None

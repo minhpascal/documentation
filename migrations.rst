@@ -14,11 +14,11 @@ Local migrations
 
 .. code-block:: bash
 
-    $ python manager.py db upgrade
+    $ python src/manager.py db upgrade
 
 Remote migrations
 -----------------
 
 .. code-block:: bash
 
-    $ heroku run python manager.py db upgrade
+    $ heroku run python src/manager.py db upgrade
