@@ -98,7 +98,8 @@ If you want to use SQLite
 
     $ ./install.sh sqlite
 
-You'll have to either build the javascript one page app yourself or download it from the author repository `here <https://filer.1pxsolidblack.pl/public/jarr/current.min.js`.
+You'll have to either build the javascript one page app yourself or download it
+from the author repository `here <https://filer.1pxsolidblack.pl/public/jarr/current.min.js`_.
 For the by-hand compilation you'll have to have node.js installed and then it goes this way :
 
 .. code-block:: bash
