@@ -54,6 +54,9 @@ variables:
 
     $ heroku config:set SELF_REGISTRATION=1
     $ heroku config:set PLATFORM_URL=<URL-of-your-platform>
+    $ heroku config:set SECRET_KEY=<a secret token only you know in order to use sessions>
+    $ heroku config:set SECURITY_PASSWORD_SALT=<a secret to confirm user account>
+    $ heroku config:set TOKEN_VALIDITY_PERIOD=3600
     $ heroku config:set NOTIFICATION_EMAIL=<notification-email>
     $ heroku config:set POSTMARK_API_KEY=<your-postmark-api-key>
     $ heroku addons:add postmark:10k
@@ -96,8 +99,16 @@ If you want to use SQLite
 
     $ ./install.sh sqlite
 
+You'll have to either build the javascript one page app yourself or download it
+from the author repository `here <https://filer.1pxsolidblack.pl/public/jarr/current.min.js>`_.
+For the by-hand compilation you'll have to have node.js installed and then it goes this way :
 
-Finally:
+.. code-block:: bash
+
+    $ npm install
+    $ npm run build
+
+Finally launch the test web server this way:
 
 .. code-block:: bash
 
@@ -123,4 +134,4 @@ your cron rules (*crontab -e*):
 
 .. code-block:: bash
 
-    */30 * * * * cd ~/.JARR/ ; python src/anager.py fetch_asyncio None None
+    */30 * * * * cd ~/.JARR/ ; python src/manager.py fetch_asyncio None None
