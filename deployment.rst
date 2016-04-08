@@ -3,8 +3,8 @@ Deployment
 
 This application can be deployed on Heroku or on a traditional server.
 
-After installation, you will be able to connect with the email
-*root@jarr.localhost* and the password *password*.
+After installation, you will be able to connect with the nickname
+*admin* and the password *password*.
 
 Deploying the application with Vagrant
 --------------------------------------
