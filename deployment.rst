@@ -81,6 +81,11 @@ And some other optional environment variables, as previously presented.
 Deploying the application on a traditional server
 -------------------------------------------------
 
+Configuration (database url, email, user agent, etc.) is done via the
+file `src/conf/conf.cfg`.
+Check this file before installing JARR.
+
+
 .. code-block:: bash
 
     $ git clone https://github.com/JARR-aggregator/JARR.git
@@ -111,7 +116,7 @@ it yourself. You'll have to have Node.js installed:
 Then in the configuration file `src/conf/conf.cfg` set the variable
 *cdn_address* to the empty string.
 
-Finally launch the test web server this way:
+Finally launch the Web server:
 
 .. code-block:: bash
 
@@ -119,13 +124,6 @@ Finally launch the test web server this way:
      * Running on http://0.0.0.0:5000/
      * Restarting with reloader
 
-
-Configuration
-=============
-
-Configuration (database url, email, user agent, etc.) is done via the
-file `src/conf/conf.cfg`.
-Check this file before initializing the database (with `manager.py`).
 
 
 Automatic updates
