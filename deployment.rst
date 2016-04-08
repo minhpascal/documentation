@@ -99,14 +99,17 @@ If you want to use SQLite
 
     $ ./install.sh sqlite
 
-You'll have to either build the javascript one page app yourself or download it
-from the author repository `here <https://filer.1pxsolidblack.pl/public/jarr/current.min.js>`_.
-For the by-hand compilation you'll have to have node.js installed and then it goes this way :
+JARR is now ready. By default the one page app will be loaded from
+`here <https://cdn.cedricbonhomme.org/bundle.min.js>`_. But you can also built
+it yourself. You'll have to have Node.js installed:
 
 .. code-block:: bash
 
     $ npm install
     $ npm run build
+
+Then in the configuration file `src/conf/conf.cfg` set the variable
+*cdn_address* to the empty string.
 
 Finally launch the test web server this way:
 
