@@ -54,8 +54,6 @@ variables:
 
     $ heroku config:set SELF_REGISTRATION=1
     $ heroku config:set PLATFORM_URL=<URL-of-your-platform>
-    $ heroku config:set RECAPTCHA_PUBLIC_KEY=<your-recaptcha-public-key>
-    $ heroku config:set RECAPTCHA_PRIVATE_KEY=<your-recaptcha-private-key>
     $ heroku config:set NOTIFICATION_EMAIL=<notification-email>
     $ heroku config:set POSTMARK_API_KEY=<your-postmark-api-key>
     $ heroku addons:add postmark:10k
@@ -111,13 +109,9 @@ Finally:
 Configuration
 =============
 
-Configuration (database url, email, proxy, user agent, etc.) is done via the
+Configuration (database url, email, user agent, etc.) is done via the
 file `src/conf/conf.cfg`.
 Check this file before initializing the database (with `manager.py`).
-
-If you want to use JARR with Tor/Privoxy, you just have to set the value
-of `http_proxy` (most of the time: `http_proxy = 127.0.0.1:8118`). Else leave
-the value blank.
 
 
 Automatic updates
