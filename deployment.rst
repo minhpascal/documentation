@@ -3,30 +3,19 @@ Deployment
 
 This application can be deployed on Heroku or on a traditional server.
 
+The following will provide three different types of deployments.
+
 After installation, you will be able to connect with the nickname
 *admin* and the password *password*.
+
+
 
 Deploying the application with Vagrant
 --------------------------------------
 
-Installation of VirtualBox and Vagrant
+Follow the steps `here <https://github.com/JARR-aggregator/jarr-vagrant>`_
 
-.. code-block:: bash
 
-    $ sudo apt-get install virtualbox
-    $ wget https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.4_x86_64.deb
-    $ sudo dpkg -i vagrant_1.7.4_x86_64.deb
-    $ rm vagrant_1.7.4_x86_64.deb
-
-Deployment of JARR
-
-.. code-block:: bash
-
-    $ git clone https://github.com/JARR-aggregator/JARR.git
-    $ cd JARR/vagrant/
-    $ vagrant up
-
-Once the VM configured, go to the address http://127.0.0.1:5000.
 
 Deploying the application on Heroku
 -----------------------------------
@@ -77,6 +66,8 @@ Alternatively, you can deploy your own copy of the app using this button:
 
 You will be prompted to choose an email and a password for the administrator's account.
 And some other optional environment variables, as previously presented.
+
+
 
 Deploying the application on a traditional server
 -------------------------------------------------
