@@ -27,7 +27,7 @@ The geek way
 
 .. code-block:: bash
 
-    $ git clone https://github.com/JARR-aggregator/JARR.git
+    $ git clone https://github.com/JARR/JARR.git
     $ cd JARR
     $ heroku create
     $ heroku addons:add heroku-postgresql:dev
@@ -62,7 +62,7 @@ The simple way
 Alternatively, you can deploy your own copy of the app using this button:
 
 .. image:: https://www.herokucdn.com/deploy/button.png
-    :target: https://heroku.com/deploy?template=https://github.com/JARR-aggregator/JARR.git
+    :target: https://heroku.com/deploy?template=https://github.com/JARR/JARR.git
 
 You will be prompted to choose an email and a password for the administrator's account.
 And some other optional environment variables, as previously presented.
@@ -79,7 +79,7 @@ Check this file before installing JARR.
 
 .. code-block:: bash
 
-    $ git clone https://github.com/JARR-aggregator/JARR.git
+    $ git clone https://github.com/JARR/JARR.git
     $ cd JARR/
 
 If you want to use PostgreSQL
