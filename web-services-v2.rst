@@ -7,17 +7,18 @@ Articles
 .. code-block:: python
 
     >>> import requests, json
-    >>> r = requests.get("https://jarr.herokuapp.com/api/v2.0/article/1s",
+    >>> r = requests.get("https://jarr.herokuapp.com/api/v2.0/article/1",
     ...                  headers={'Content-type': 'application/json'},
     ...                  auth=("your-nickname", "your-password"))
     >>> r.status_code
     200  # OK
     >>> rjson = r.json()
     >>> rjson["title"]
-    'Sponsors required for KDE code sprint in Randa'
+    "Why pathlib.Path doesn't inherit from str in Python"
     >>> rjson["date"]
-    'Wed, 18 Jun 2014 14:25:18 GMT'
-    >>> r = requests.get("https://jarr.herokuapp.com/api/v2.0/article/1s",
+    '2016-03-29T11:50:50'
+    >>> rjson["link"]
+    >>> r = requests.get("https://jarr.herokuapp.com/api/v2.0/article/1",
     ...                  headers={'Content-type': 'application/json'},
     ...                  auth=("your-nickname", "your-password"),
     ...                  data=json.dumps({'id__in': [1, 2]}))
