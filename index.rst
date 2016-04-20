@@ -9,6 +9,8 @@ Welcome to JARR's documentation!
 `JARR <https://github.com/JARR/JARR>`_ is a web-based news aggregator and
 reader.
 
+You can test it `here <https://jarr.herokuapp.com>`_.
+
 
 Configuration and deployment
 ============================
@@ -25,7 +27,8 @@ Web services
 .. toctree::
     :maxdepth: 2
 
-    web-services
+    web-services-v2
+    web-services-v3
 
 Migrations
 ==========
