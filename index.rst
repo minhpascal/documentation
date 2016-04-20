@@ -4,7 +4,10 @@
    contain the root `toctree` directive.
 
 Welcome to JARR's documentation!
-========================================
+================================
+
+`JARR <https://github.com/JARR/JARR>`_ is a web-based news aggregator and
+reader.
 
 
 Configuration and deployment

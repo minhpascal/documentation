@@ -13,7 +13,7 @@ After installation, you will be able to connect with the nickname
 Deploying the application with Vagrant
 --------------------------------------
 
-Follow the steps `here <https://github.com/JARR-aggregator/jarr-vagrant>`_
+Follow the steps `here <https://github.com/JARR/JARR-vagrant>`_.
 
 
 
