@@ -30,6 +30,10 @@ Web services
     web-services-v2
     web-services-v3
 
+.. TIP::
+
+    You can connect your own crawler thanks to the API.
+
 Migrations
 ==========
 
