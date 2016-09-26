@@ -6,8 +6,8 @@
 Welcome to JARR's documentation!
 ================================
 
-`JARR <https://github.com/JARR/JARR>`_ is a web-based news aggregator and
-reader.
+`JARR <https://github.com/JARR/JARR>`_ (Just Another RSS Reader) is a
+web-based news aggregator and reader.
 
 You can test it `here <https://jarr.herokuapp.com>`_.
 
