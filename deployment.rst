@@ -82,12 +82,6 @@ Check this file before installing JARR.
     $ git clone https://github.com/JARR/JARR.git
     $ cd JARR/
 
-If you want to use PostgreSQL
-'''''''''''''''''''''''''''''
-.. code-block:: bash
-
-    $ ./install.sh postgres
-
 If you want to use SQLite
 '''''''''''''''''''''''''
 
@@ -95,7 +89,19 @@ If you want to use SQLite
 
     $ ./install.sh sqlite
 
-JARR is now ready. By default the one page app will be loaded from
+If you want to use PostgreSQL
+'''''''''''''''''''''''''''''
+
+.. code-block:: bash
+
+    $ ./install.sh postgres
+
+JARR is now ready!
+
+Configuration (database url, email, user agent, etc.) is done via the
+file `src/conf/conf.cfg`.
+
+By default the one page app of JARR will be loaded from
 `here <https://cdn.cedricbonhomme.org/bundle.min.js>`_. But you can also built
 it yourself. You'll have to have Node.js installed:
 
