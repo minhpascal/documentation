@@ -13,8 +13,26 @@ After installation, you will be able to connect with the nickname
 Deploying the application with Vagrant
 --------------------------------------
 
-Follow the steps `here <https://github.com/JARR/JARR-vagrant>`_.
+Installation of VirtualBox and Vagrant
+''''''''''''''''''''''''''''''''''''''
 
+.. code-block:: bash
+
+    $ sudo apt-get install virtualbox
+    $ wget https://releases.hashicorp.com/vagrant/1.8.5/vagrant_1.8.5_x86_64.deb
+    $ sudo dpkg -i vagrant_1.8.5_x86_64.deb
+
+Deployment of JARR
+''''''''''''''''''
+
+.. code-block:: bash
+
+    $ git clone https://github.com/JARR/JARR-vagrant.git
+    $ cd JARR-vagrant/
+    $ vagrant up
+
+Once the VM will be configured by Vagrant,
+go to the address http://127.0.0.1:5000.
 
 
 Deploying the application on Heroku
