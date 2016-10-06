@@ -150,4 +150,4 @@ your cron rules (*crontab -e*):
 
 .. code-block:: bash
 
-    */30 * * * * cd ~/.JARR/ ; python src/manager.py fetch_asyncio None None
+    */30 * * * * cd ~/.JARR/ ; python src/manager.py fetch_asyncio
