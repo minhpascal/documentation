@@ -9,7 +9,7 @@ Articles
 .. code-block:: python
 
     >>> import requests, json
-    >>> r = requests.get("https://jarr.herokuapp.com/api/v3/article/1",
+    >>> r = requests.get("https://newspipe.herokuapp.com/api/v3/article/1",
     ...                  headers={'Content-type': 'application/json'},
     ...                  auth=("your-nickname", "your-password"))
     >>> r.status_code

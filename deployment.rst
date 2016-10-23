@@ -22,13 +22,13 @@ Installation of VirtualBox and Vagrant
     $ wget https://releases.hashicorp.com/vagrant/1.8.5/vagrant_1.8.5_x86_64.deb
     $ sudo dpkg -i vagrant_1.8.5_x86_64.deb
 
-Deployment of JARR
+Deployment of Newspipe
 ''''''''''''''''''
 
 .. code-block:: bash
 
-    $ git clone https://github.com/JARR/JARR-vagrant.git
-    $ cd JARR-vagrant/
+    $ git clone https://github.com/Newspipe/Newspipe-vagrant.git
+    $ cd Newspipe-vagrant/
     $ vagrant up
 
 Once the VM will be configured by Vagrant,
@@ -38,15 +38,15 @@ go to the address http://127.0.0.1:5000.
 Deploying the application on Heroku
 -----------------------------------
 
-An instance of JARR is running `here <https://jarr.herokuapp.com>`_.
+An instance of Newspipe is running `here <https://newspipe.herokuapp.com>`_.
 
 The geek way
 ''''''''''''
 
 .. code-block:: bash
 
-    $ git clone https://github.com/JARR/JARR.git
-    $ cd JARR
+    $ git clone https://github.com/Newspipe/Newspipe.git
+    $ cd Newspipe
     $ heroku create
     $ heroku addons:add heroku-postgresql:dev
     $ heroku config:set HEROKU=1
@@ -80,7 +80,7 @@ The simple way
 Alternatively, you can deploy your own copy of the app using this button:
 
 .. image:: https://www.herokucdn.com/deploy/button.png
-    :target: https://heroku.com/deploy?template=https://github.com/JARR/JARR.git
+    :target: https://heroku.com/deploy?template=https://github.com/Newspipe/Newspipe.git
 
 You will be prompted to choose an email and a password for the administrator's account.
 And some other optional environment variables, as previously presented.
@@ -92,13 +92,13 @@ Deploying the application on a traditional server
 
 Configuration (database url, email, user agent, etc.) is done via the
 file `src/conf/conf.cfg`.
-Check this file before installing JARR.
+Check this file before installing Newspipe.
 
 
 .. code-block:: bash
 
-    $ git clone https://github.com/JARR/JARR.git
-    $ cd JARR/
+    $ git clone https://github.com/Newspipe/Newspipe.git
+    $ cd Newspipe/
 
 If you want to use SQLite
 '''''''''''''''''''''''''
@@ -114,12 +114,12 @@ If you want to use PostgreSQL
 
     $ ./install.sh postgres
 
-JARR is now ready!
+Newspipe is now ready!
 
 Configuration (database url, email, user agent, etc.) is done via the
 file `src/conf/conf.cfg`.
 
-By default the one page app of JARR will be loaded from
+By default the one page app of Newspipe will be loaded from
 `here <https://cdn.cedricbonhomme.org/bundle.min.js>`_. But you can also built
 it yourself. You'll have to have Node.js installed:
 
@@ -150,4 +150,4 @@ your cron rules (*crontab -e*):
 
 .. code-block:: bash
 
-    */30 * * * * cd ~/.JARR/ ; python src/manager.py fetch_asyncio
+    */30 * * * * cd ~/.Newspipe/ ; python src/manager.py fetch_asyncio

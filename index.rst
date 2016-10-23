@@ -1,15 +1,15 @@
-.. JARR documentation master file, created by
+.. Newspipe documentation master file, created by
    sphinx-quickstart on Fri Feb 20 07:23:42 2015.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to JARR's documentation!
+Welcome to Newspipe's documentation!
 ================================
 
-`JARR <https://github.com/JARR/JARR>`_ (Just Another RSS Reader) is a
+`Newspipe <https://github.com/Newspipe/Newspipe>`_ (Just Another RSS Reader) is a
 web-based news aggregator and reader.
 
-You can test it `here <https://jarr.herokuapp.com>`_.
+You can test it `here <https://newspipe.herokuapp.com>`_.
 
 
 Configuration and deployment
