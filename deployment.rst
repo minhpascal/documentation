@@ -38,7 +38,7 @@ go to the address http://127.0.0.1:5000.
 Deploying the application on Heroku
 -----------------------------------
 
-An instance of Newspipe is running `here <https://newspipe.herokuapp.com>`_.
+An instance of Newspipe is running `here <https://www.newspipe.org>`_.
 
 The geek way
 ''''''''''''

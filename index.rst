@@ -6,10 +6,10 @@
 Welcome to Newspipe's documentation!
 ================================
 
-`Newspipe <https://github.com/Newspipe/Newspipe>`_ (Just Another RSS Reader) is a
+`Newspipe <https://github.com/newspipe/newspipe>`_ (Just Another RSS Reader) is a
 web-based news aggregator and reader.
 
-You can test it `here <https://newspipe.herokuapp.com>`_.
+You can register to Newspipe `here <https://www.newspipe.org>`_.
 
 
 Configuration and deployment
