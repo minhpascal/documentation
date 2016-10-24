@@ -1,7 +1,7 @@
 Documentation of Newspipe
 =========================
 
-This documentation is available [https://newspipe.readthedocs.io](here).
+This documentation is available [here](https://newspipe.readthedocs.io).
 
 To generate the documentation in HTML format:
 
