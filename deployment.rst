@@ -141,8 +141,8 @@ Finally launch the Web server:
 
 
 
-Automatic updates
-=================
+Automatic updates and logging
+=============================
 
 You can fetch new articles with `cron <https://en.wikipedia.org/wiki/Cron>`_.
 For example if you want to check for updates every 30 minutes, add this line to
@@ -151,3 +151,10 @@ your cron rules (*crontab -e*):
 .. code-block:: bash
 
     */30 * * * * cd ~/.Newspipe/ ; python src/manager.py fetch_asyncio
+
+If you want to see the logs of the crawler (when it is running on Heroku
+with the scheduler *addon*):
+
+.. code-block:: bash
+
+    $ heroku logs --source app --dyno scheduler
