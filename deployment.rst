@@ -52,7 +52,8 @@ The geek way
     https://secure-reef-83404.herokuapp.com/ | https://git.heroku.com/secure-reef-83404.git
     $ heroku addons:add heroku-postgresql:hobby-dev
     $ heroku config:set HEROKU=1
-    $ heroku config:set PLATFORM_URL=https://secure-reef-83404.herokuapp.com/
+    $ heroku config:set PLATFORM_URL=https://secure-reef-83404.herokuapp.com
+    $ heroku config:set CDN_ADDRESS=https://cdn.cedricbonhomme.org/
     $ heroku buildpacks:add --index 1 heroku/python
     $ heroku buildpacks:add --index 2 https://github.com/heroku/heroku-buildpack-nodejs
     $ heroku buildpacks:add --index 3 https://github.com/ejholmes/heroku-buildpack-bower
@@ -66,7 +67,6 @@ variables:
 .. code-block:: bash
 
     $ heroku config:set SELF_REGISTRATION=1
-    $ heroku config:set PLATFORM_URL=<URL-of-your-platform>
     $ heroku config:set SECRET_KEY=<a secret token only you know in order to use sessions>
     $ heroku config:set SECURITY_PASSWORD_SALT=<a secret to confirm user account>
     $ heroku config:set TOKEN_VALIDITY_PERIOD=3600
