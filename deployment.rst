@@ -48,10 +48,14 @@ The geek way
     $ git clone https://github.com/newspipe/newspipe.git
     $ cd newspipe
     $ heroku create
+    Creating app... done, ⬢ secure-reef-83404
+    https://secure-reef-83404.herokuapp.com/ | https://git.heroku.com/secure-reef-83404.git
     $ heroku addons:add heroku-postgresql:hobby-dev
     $ heroku config:set HEROKU=1
-    $ heroku config:set PLATFORM_URL=https://heroku-application-name.herokuapp.com/
-    $ heroku config:set CDN_ADDRESS=https://cdn.cedricbonhomme.org/
+    $ heroku config:set PLATFORM_URL=https://secure-reef-83404.herokuapp.com/
+    $ heroku buildpacks:add --index 1 heroku/python
+    $ heroku buildpacks:add --index 2 https://github.com/heroku/heroku-buildpack-nodejs
+    $ heroku buildpacks:add --index 3 https://github.com/ejholmes/heroku-buildpack-bower
     $ git push heroku master
     $ heroku run init
     $ heroku ps:scale web=1
