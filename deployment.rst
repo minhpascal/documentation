@@ -27,8 +27,8 @@ Deployment of Newspipe
 
 .. code-block:: bash
 
-    $ git clone https://github.com/Newspipe/Newspipe-vagrant.git
-    $ cd Newspipe-vagrant/
+    $ git clone https://github.com/newspipe/newspipe-vagrant.git
+    $ cd newspipe-vagrant/
     $ vagrant up
 
 Once the VM will be configured by Vagrant,
@@ -45,11 +45,13 @@ The geek way
 
 .. code-block:: bash
 
-    $ git clone https://github.com/Newspipe/Newspipe.git
-    $ cd Newspipe
+    $ git clone https://github.com/newspipe/newspipe.git
+    $ cd newspipe
     $ heroku create
-    $ heroku addons:add heroku-postgresql:dev
+    $ heroku addons:add heroku-postgresql:hobby-dev
     $ heroku config:set HEROKU=1
+    $ heroku config:set PLATFORM_URL=https://heroku-application-name.herokuapp.com/
+    $ heroku config:set CDN_ADDRESS=https://cdn.cedricbonhomme.org/
     $ git push heroku master
     $ heroku run init
     $ heroku ps:scale web=1
@@ -80,7 +82,7 @@ The simple way
 Alternatively, you can deploy your own copy of the app using this button:
 
 .. image:: https://www.herokucdn.com/deploy/button.png
-    :target: https://heroku.com/deploy?template=https://github.com/Newspipe/Newspipe.git
+    :target: https://heroku.com/deploy?template=https://github.com/newspipe/newspipe.git
 
 You will be prompted to choose an email and a password for the administrator's account.
 And some other optional environment variables, as previously presented.
@@ -97,8 +99,8 @@ Check this file before installing Newspipe.
 
 .. code-block:: bash
 
-    $ git clone https://github.com/Newspipe/Newspipe.git
-    $ cd Newspipe/
+    $ git clone https://github.com/newspipe/newspipe.git
+    $ cd newspipe/
 
 If you want to use SQLite
 '''''''''''''''''''''''''
@@ -150,7 +152,7 @@ your cron rules (*crontab -e*):
 
 .. code-block:: bash
 
-    */30 * * * * cd ~/.Newspipe/ ; python src/manager.py fetch_asyncio
+    */30 * * * * cd ~/.newspipe/ ; python src/manager.py fetch_asyncio
 
 If you want to see the logs of the crawler (when it is running on Heroku
 with the scheduler *addon*):
